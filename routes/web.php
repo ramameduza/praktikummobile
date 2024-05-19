@@ -23,15 +23,3 @@ Route::resource('products', ProductController::class);
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/products', function () {
-    return view('products');
-});
-
-Route::get('/brands', function () {
-    return view('brands');
-});
-
-Route::get('/productCategories', function () {
-    return view('productCategories');
-});

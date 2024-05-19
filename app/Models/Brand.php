@@ -11,4 +11,10 @@ use Illuminate\Database\Eloquent\Model;
 class Brand extends Model
 {
 use HasFactory;
+protected $fillable = [
+    'id',
+    'product_brand',
+    'status',
+    'deleted',
+];
 }

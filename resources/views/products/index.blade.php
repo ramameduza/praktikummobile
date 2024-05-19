@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layout.app')
 
 @section('content')
 <div class="container mt-5">
@@ -11,6 +11,7 @@
     @endif
     <table class="table table-bordered">
         <tr>
+            <th>Id</th>
             <th>SKU</th>
             <th>Kategori</th>
             <th>Nama</th>
@@ -24,6 +25,7 @@
         </tr>
         @foreach ($products as $product)
             <tr>
+                <td>{{ $product->id }}</td>
                 <td>{{ $product->sku }}</td>
                 <td>{{ $product->product_category }}</td>
                 <td>{{ $product->product_name }}</td>
